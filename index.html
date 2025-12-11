@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Coze Chat</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js"></script>
+    <script>
+        new CozeWebSDK.WebChatClient({
+            config: {
+                bot_id: '7582401927641088052',
+            },
+            componentProps: {
+                title: 'Coze',
+            },
+            auth: {
+                type: 'token',
+                token: 'pat_ncaRrYEIW4hkuVioedjuApA23AoU5S4yODsZEuc90GGekwuazvXuyEARwCSrAmpG',
+                onRefreshToken: function () {
+                    return 'pat_ncaRrYEIW4hkuVioedjuApA23AoU5S4yODsZEuc90GGekwuazvXuyEARwCSrAmpG'
+                }
+            }
+        });
+    </script>
+</body>
+</html>
